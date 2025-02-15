@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: #F9FAFB;
+}
+.nav{
+    position: relative;
+}
+@media screen and (max-width:1024px) {
+    .nav .container ul{
+        flex-direction: column; 
+        background-color: white;
+         width: 350px; 
+         position: absolute; 
+         left: -370px;
+         height: 100vh;
+         top: 0;
+    }
+    .nav .container .list:hover  ul{
+        left: 0 ;
+        transition: left .5s;
+        
+    } 
+    .nav .container .list  ul li{ 
+        border-bottom: 1px solid black;
+        padding:10px  10px 10px ;
+    }
+    .nav .container .list  ul li:nth-child(1),.nav .container .list  ul li:nth-child(2),.nav .container .list  ul li:last-child,.nav .container .list > ul li:nth-last-child(2){
+        border:none;
+    }
+    .nav .container .list  ul li:first-child{
+        position:absolute;
+        right: -25px;
+    }
+}
+h1{
+    font-weight: 700;
+}
+.active{
+    color: #115D85;
+}
